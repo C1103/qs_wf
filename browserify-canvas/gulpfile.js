@@ -22,7 +22,7 @@ gulp.task('build', function() {
         .pipe(source('main.js'))
         .pipe(buffer())
         .pipe(uglify()) // 压缩
-        .pipe(gulp.dest('./dist/js'))
+        .pipe(gulp.dest('./dist/js'));
 });
 
 gulp.task('watch', ['build'], function() {

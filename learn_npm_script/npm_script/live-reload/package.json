@@ -1,0 +1,20 @@
+{
+  "name": "live-reload",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm-run-all --parallel client:*",
+    "client:reload-server": "livereload client/",
+    "client:static-server": "http-server client/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "C1103 <1103384457@qq.com> (http://c1103.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "livereload": "^0.6.3",
+    "npm-run-all": "^4.1.2"
+  }
+}
